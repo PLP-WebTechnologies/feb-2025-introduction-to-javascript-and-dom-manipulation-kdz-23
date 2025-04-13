@@ -1,0 +1,230 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth; /* For smooth scrolling */
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    padding: 5px;
+}
+
+nav a.active {
+    background-color: #007bff; /* Active link color */
+    padding: 5px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills-list li {
+    margin-bottom: 20px;
+}
+
+.skills-list ul {
+    padding-left: 20px;
+}
+
+/* Contact Section */
+.contact-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form label {
+    font-size: 1.1em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form .submit-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .submit-btn:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Layout with Media Queries */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+
+    .skills-list li {
+        font-size: 1em;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    form input,
+    form textarea {
+        padding: 8px;
+    }
+
+    form .submit-btn {
+        padding: 8px 16px;
+    }
+}
+
+/* Desktop and Larger Screens (default) */
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+        width: 80%;
+    }
+
+    header {
+        width: 100%;
+    }
+}
